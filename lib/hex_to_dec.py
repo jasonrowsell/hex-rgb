@@ -15,6 +15,9 @@ def normalize(hex: str) -> str:
 
 
 def xx_to_dec(xx: str) -> int:
+    """
+    Convert a pair of hexadecimal characters to their decimal representation.
+    """
     return (HEX_TO_DEC[xx[0]] << 4) | HEX_TO_DEC[xx[1]]
 
 
