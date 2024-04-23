@@ -1,12 +1,12 @@
 import os
 import unittest
 import re
-from lib import hex_to_dec
+from lib import hex_converter
 
 
 def hex_to_rgb(r: re.Match):
     hex = r.group(1).lower()
-    return hex_to_dec.hex_to_dec(hex)
+    return hex_converter.hex_to_dec(hex)
 
 
 def convert_css(file: str):
